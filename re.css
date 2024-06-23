@@ -1,0 +1,88 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333; /* Default background color */
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.content {
+    padding-top: 60px;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+/* Section background colors */
+#home {
+    background-color: #dff493; /* Light gray */
+}
+
+#about {
+    background-color: #36a772; /* Slightly darker gray */
+}
+
+#services {
+    background-color: #ed8585; /* Medium gray */
+}
+
+#contact {
+    background-color: #ef8ac7; /* Dark gray */
+}
+
+/* Background colors for different screen sizes */
+@media (max-width: 600px) {
+    #navbar {
+        background-color: #4CAF50; /* Green for small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    #navbar {
+        background-color: #FF9800; /* Orange for medium screens */
+    }
+}
+
+@media (min-width: 901px) {
+    #navbar {
+        background-color: #333; /* Default background color for large screens */
+    }
+}
